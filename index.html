@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Day Tree</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script src="functions.js"></script>
+    <script src="love.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="text">
+            <div id="code"></div>
+        </div>
+        <div id="clock-box"></div>
+        <canvas id="canvas" width="1100" height="680"></canvas>
+        <button id="generateTree">Click to Grow Tree</button>
+    </div>
+
+    <script>
+        // Trigger tree animation on button click
+        document.getElementById("generateTree").addEventListener("click", function() {
+            runAsync().start();
+        });
+    </script>
+</body>
+</html>
